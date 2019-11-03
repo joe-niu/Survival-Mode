@@ -1,3 +1,1 @@
-Longitude1 Latitude1 Severity1
-Longitude2 Latituse2 Severity2
-Longitude3 Latituse3 Severity3
+Serverity Longitude Latitude First Last

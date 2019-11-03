@@ -17,15 +17,11 @@ def senddata():
     content = data.read()
     content = content.split()
     data.close()
-    return {'Longitude1' : content[0],
-            'Latitude1' : content[1],
-            'Severity1' : content[2],
-            'Longitude2' : content[3],
-            'Latitude2' : content[4],
-            'Severity2' : content[5],
-            'Longitude3' : content[6],
-            'Latitude3' : content[7],
-            'Severity3' : content[8],}
+    return {'Severity' : content[0],
+            'Latitude' : content[1],
+            'Longitude' : content[2],
+            'FirstName' : content[3],
+            'LastName' : content[4]}
 
 if __name__ == '__main__':
     app.run(port = 9000, debug=True)
