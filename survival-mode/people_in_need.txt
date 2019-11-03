@@ -1,1 +1,9 @@
-Serverity Longitude Latitude First Last
+Serverity Longitude Latitude First LastNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNHigh 30.281580 -97.740220
+High 30.281580 -97.740220
+Low 30.281580 -97.740220
+High 30.281580 -97.740220
+High 30.281580 -97.740220
+Low 30.281580 -97.740220
+High 30.281580 -97.740220Casey kinnamon
+Low 30.281580 -97.740220
+High 30.281580 -97.740220 Casey kinnamon

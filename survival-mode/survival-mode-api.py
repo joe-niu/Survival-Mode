@@ -5,6 +5,20 @@ import urllib.request
 
 app = Flask(__name__)
 
+class data:
+    severity=''
+    Latitude=''
+    Longitude=''
+    FirstName=''
+    LastName=''
+    
+    def __init__(self,severity,Latitude,Longitude,FirstName='',LastName=''):
+        self.severity=severity
+        self.Latitude=Latitude
+        self.Longitude=Longitude
+        self.FirstName=FirstName
+        self.LastName=LastName
+
 #app.config['SECRET_KEY'] = 'SecretKey'
 #app.config['CORS_HEADERS'] = 'Content-Type'
 
@@ -16,12 +30,15 @@ def senddata():
     data = (open("people_in_need.txt", "r"))
     content = data.read()
     content = content.split()
+    contentArr = []
+    for line in content:
+        arr=line.split()
+        tempData=data(arr[0],arr[1],arr[2],arr[3],arr[4])
+        contentArr.append(tempdata)
+
+        
     data.close()
-    return {'Severity' : content[0],
-            'Latitude' : content[1],
-            'Longitude' : content[2],
-            'FirstName' : content[3],
-            'LastName' : content[4]}
+    return json.dumps(contentArr)
 
 if __name__ == '__main__':
     app.run(port = 9000, debug=True)
