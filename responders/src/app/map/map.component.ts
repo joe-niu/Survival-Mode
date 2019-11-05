@@ -1,4 +1,4 @@
-/// <reference types="@types/googlemaps" />
+/* <reference types="@types/googlemaps" />*/
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { ViewChild } from '@angular/core';
 import { GetDataService } from '../get-data.service';
@@ -11,6 +11,19 @@ import { data } from '../models/data.model';
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss']
 })
+
+export class MapComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+/*
+
+
 export class MapComponent implements OnChanges {
   @ViewChild('gmap', {static: false}) gmapElement: any;
   @Input() results:data[];
@@ -63,7 +76,7 @@ export class MapComponent implements OnChanges {
 }
 
 
-
+*/
 
 
 
