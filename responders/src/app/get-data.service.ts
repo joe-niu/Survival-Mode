@@ -11,12 +11,12 @@ export class GetDataService {
 
   GetData() {
     let result = new AsyncSubject();
-    const url = 'localhost';  
+    const url = 'http://127.0.0.1:9000/survival-mode';  
 
     this.http.get(url).subscribe( res => {
       result.next(res);
       result.complete();
-    });
+    }); 
     return result;
   }
 }

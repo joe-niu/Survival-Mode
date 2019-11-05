@@ -6,8 +6,19 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<app-map></app-map>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            <app-map [results]="Data"></app-map>
+            <button (click)="GetData()">REFRESH</button>
+        </div>
+        <div class="col-lg-3">
+            <div *ngFor="let person of Data">
+                <app-result [Data]="person"></app-result>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

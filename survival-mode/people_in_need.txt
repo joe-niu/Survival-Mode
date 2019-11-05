@@ -1,3 +1,2 @@
-Longitude1 Latitude1 Severity1
-Longitude2 Latituse2 Severity2
-Longitude3 Latituse3 Severity3
+High 30.281580 -97.740220 Casey kinnamon
+Low -97.74022 30.28150 Joe niu

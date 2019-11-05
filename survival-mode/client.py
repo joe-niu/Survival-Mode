@@ -9,14 +9,16 @@ port = 6000
   
 # connect to the server on local computer 
 s.connect(('192.168.4.1', port)) 
-s.send(b'Hello World!!!')
+s.send(b'data')
+print('Connected')
 # receive data from the server 
 message = (s.recv(1024))
 print(message)
-message = message.decode("utf-8")
-file = open('people_in_need.txt', 'w')
-file.write(message)
-file.close()
-#print (s.recv(1024)) 
-# close the connection 
+if message != 'NaN':
+    message = message.decode("utf-8")
+    file = open('people_in_need.txt', 'a')
+    file.write(message)
+    file.close()
+    #print (s.recv(1024)) 
+    # close the connection 
 s.close()    
