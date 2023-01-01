@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "~8.2.13",
     "@angular/router": "~8.2.13",
     "bootstrap": "^4.3.1",
-    "loader-utils": "^1.2.3",
+    "loader-utils": "^3.2.1",
     "node-sass": "^4.13.0",
     "rxjs": "~6.4.0",
     "schema-utils": "^2.5.0",
@@ -28,7 +28,7 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.17",
+    "@angular-devkit/build-angular": "~15.0.4",
     "@angular/cli": "~8.3.17",
     "@angular/compiler-cli": "~8.2.13",
     "@angular/language-service": "~8.2.13",
